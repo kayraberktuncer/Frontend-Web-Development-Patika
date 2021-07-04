@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Otomanopee One', sans-serif;
+  list-style: none;
+}
+
+.container {
+  width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.header-text {
+  display: flex;
+  color: red;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-content h1,
+p {
+  display: flex;
+  justify-content: center;
+}
+
+.main-product-list h3 {
+  display: flex;
+  justify-content: center;
+}
+.main-product-list ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.other-header {
+  display: flex;
+  justify-content: center;
+  color: blueviolet;
+}
+
+.about-title {
+  color: chocolate;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.product-content ol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-content ol li {
+  display: flex;
+  flex-direction: column;
+}
