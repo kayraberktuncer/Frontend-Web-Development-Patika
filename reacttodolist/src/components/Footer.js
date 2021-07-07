@@ -2,24 +2,14 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer className="footer">
-      <span className="todo-count">
-        <strong>2</strong>
-        items left
-      </span>
-
-      <ul className="filters">
-        <li>
-          <button className="selected">All</button>
-        </li>
-        <li>
-          <button>Active</button>
-        </li>
-        <li>
-          <button>Completed</button>
-        </li>
-      </ul>
-      <button className="clear-completed">Clear completed</button>
+    <footer className="info">
+      <p>Click to edit a todo</p>
+      <p>
+        Created by <a href="https://d12n.me/">Dmitry Sharabin</a>
+      </p>
+      <p>
+        Part of <a href="http://todomvc.com">TodoMVC</a>
+      </p>
     </footer>
   )
 }

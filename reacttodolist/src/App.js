@@ -9,8 +9,8 @@ function App() {
     { text: 'Learn React', isCompleted: false },
     { text: 'Have a life!', isCompleted: false },
   ]
-  
-  const [todo, setTodo] = useState('')
+
+  const [todo, setTodo] = useState(initialTodos)
 
   const getTodo = (event) => {
     setTodo(event.target.value)
@@ -21,19 +21,10 @@ function App() {
     <div className="App">
       <section className="todoapp">
         <Header getTodo={getTodo} />
-        <Todo />
+        <Todo todo={todo} />
         {console.log(todo)}
-        <Footer />
       </section>
-      <footer className="info">
-        <p>Click to edit a todo</p>
-        <p>
-          Created by <a href="https://d12n.me/">Dmitry Sharabin</a>
-        </p>
-        <p>
-          Part of <a href="http://todomvc.com">TodoMVC</a>
-        </p>
-      </footer>
+      <Footer />
     </div>
   )
 }
