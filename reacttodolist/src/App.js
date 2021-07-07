@@ -12,15 +12,10 @@ function App() {
 
   const [todo, setTodo] = useState(initialTodos)
 
-  const getTodo = (event) => {
-    setTodo(event.target.value)
-    event.preventDefault()
-  }
-
   return (
     <div className="App">
       <section className="todoapp">
-        <Header getTodo={getTodo} />
+        <Header todo={todo} setTodo={setTodo} />
         <Todo todo={todo} />
         {console.log(todo)}
       </section>

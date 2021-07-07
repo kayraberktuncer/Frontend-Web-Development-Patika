@@ -1,6 +1,11 @@
 import React from 'react'
 
 export default function Todo({ todo }) {
+  const leftItems = (todo) => {
+    todo = todo.filter((item) => item.isCompleted !== true)
+    return todo.length
+  }
+
   return (
     <>
       <section className="main">
@@ -27,7 +32,7 @@ export default function Todo({ todo }) {
       </section>
       <footer className="footer">
         <span className="todo-count">
-          <strong>2</strong>
+          <strong>{leftItems(todo)}</strong>
           items left
         </span>
 
